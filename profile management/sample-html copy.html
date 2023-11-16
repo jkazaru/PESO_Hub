@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample doc</title>
+    <!-- COPY THIS 1-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <!-- COPY THIS 1 -->
+
+    <style>
+        /*   <!-- COPY THIS 2--> */
+        #nav-placeholder {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+   /*   <!-- COPY THIS 2--> */
+        .test-body {
+            background-color: #1e1e1e;
+            width: 100%;
+            height: 400px;
+        }
+
+        .test-body2 {
+            background-color: #921919;
+            width: 100%;
+            height: 400px;
+        }
+
+        .test-body3 {
+            background-color: #3c6d11;
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- COPY THIS 3-->
+    <div id="nav-placeholder">
+        <script>
+            $(function () {
+                $("#nav-placeholder").load("user-nav-bar.html");
+            });
+        </script>
+    </div>
+    <!-- COPY THIS 3-->
+
+
+
+    <header></header>
+    <div class="test-body">
+
+    </div>
+    <div class="test-body2">
+
+    </div>
+    <div class="test-body3">
+
+    </div>
+</body>
+
+</html>
