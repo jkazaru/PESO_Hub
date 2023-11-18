@@ -2,174 +2,128 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample doc</title>
-    <!-- COPY THIS 1-->
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <!-- COPY THIS 1 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applicant Identity</title>
+  <!-- COPY THIS 1-->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="validation-controll.js"></script>
+  <!-- COPY THIS 1 -->
+  <link rel="stylesheet" href="profile-management.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
-    <style>
-        /*   <!-- COPY THIS 2--> */
-        #nav-placeholder {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
 
-        /*   <!-- COPY THIS 2--> */
-        .test-body {
-            background-color: #1e1e1e;
-            width: 100%;
-            height: 400px;
-        }
-
-        .test-body2 {
-            background-color: #921919;
-            width: 100%;
-            height: 400px;
-        }
-
-        .test-body3 {
-            background-color: #3c6d11;
-            width: 100%;
-            height: 400px;
-        }
-
-        .badge-width {
-            width: 12rem;
-            height: 2rem;
-            text-align: center;
-            font-size: 0.9rem !important;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .form-box {
-            padding: 1rem;
-            height: 70vh;
-            width: 50vw;
-            border: 2px dashed yellow;
-            border-radius: 2%;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
-    <!-- COPY THIS 3-->
-    <div id="nav-placeholder">
-        <script>
-            $(function () {
-                $("#nav-placeholder").load("user-nav-bar.html");
-            });
-        </script>
-    </div>
-    <!-- COPY THIS 3-->
+  <!-- COPY THIS 3-->
+  <div id="nav-placeholder">
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("user-nav-bar.html");
+      });
+    </script>
+  </div>
+  <!-- COPY THIS 3-->
 
-    <!-- STEP INDICATOR -->
-    <div class="container-fluid d-flex justify-content-center flex-wrap mt-3">
-        <span class="badge bg-success badge-width mx-1 my-1">Applicant Identity</span>
-        <span class="badge bg-secondary badge-width mx-1 my-1">Personal Information</span>
-        <span class="badge bg-secondary badge-width mx-1 my-1">Work Experience</span>
-        <span class="badge bg-secondary badge-width mx-1 my-1">Educational Background</span>
-        <span class="badge bg-secondary badge-width mx-1 my-1">Job Preference</span>
-        <span class="badge bg-secondary badge-width mx-1 my-1">Employment Status</span>
+  <!-- STEP INDICATOR -->
+  <div class="container-fluid d-flex justify-content-center flex-wrap mt-3">
+    <span class="badge bg-success badge-width mx-1 my-1">Applicant Identity</span>
+    <span class="badge bg-secondary badge-width mx-1 my-1">Personal Information</span>
+    <span class="badge bg-secondary badge-width mx-1 my-1">Work Experience</span>
+    <span class="badge bg-secondary badge-width mx-1 my-1">Educational Background</span>
+    <span class="badge bg-secondary badge-width mx-1 my-1">Job Preference</span>
+    <span class="badge bg-secondary badge-width mx-1 my-1">Employment Status</span>
 
-    </div>
-    <div class="container-fluid d-flex justify-content-center flex-wrap mt-3">
+  </div>
+  <!-- FORM CONTAINER -->
+  <div class="container-fluid d-flex justify-content-center flex-wrap mt-3">
 
-        <div class="form-box">
-            <form class="row g-8 needs-validation" novalidate>
-                <div class="col-md-12">
-                    <label for="validationCustom01" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="Delacruz" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <label for="validationCustom02" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="validationCustom02" value="Juan" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <label for="validationCustom03" class="form-label">Middle name</label>
-                    <input type="text" class="form-control" id="validationCustom03" value="Tamad" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <label for="validationCustom04" class="form-label">Sex</label>
-                    <select class="form-select" id="validationCustom04" required>
-                      <option selected disabled value="">Choose...</option>
-                      <option>Male</option>
-                      <option>Female</option>
-                      <option>Everyday</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Please select a valid state.
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <label for="validationCustom04" class="form-label">Date</label>
-                    <input id="endDate" class="form-control" type="date" />
-                    <span id="endDateSelected"></span>
-                    <div class="invalid-feedback">
-                      Please select a valid state.
-                    </div>
-                  </div>
 
-                 
-                <!-- <div class="col-md-4">
-                  <label for="validationCustomUsername" class="form-label">Username</label>
-                  <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback">
-                      Please choose a username.
-                    </div>
-                  </div>
+
+
+    <form class="row g-8 needs-validation">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="form-box">
+           
+              <!-- LNAME -->
+              <div class="col-md-12">
+                <label for="validationCustom01" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Delacruz" required>
+                <div class="valid-feedback">
+                  Looks good!
                 </div>
-                <div class="col-md-6">
-                  <label for="validationCustom03" class="form-label">City</label>
-                  <input type="text" class="form-control" id="validationCustom03" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid city.
-                  </div>
+              </div>
+
+              <!-- FNAME -->
+              <div class="col-md-12">
+                <label for="validationCustom02" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Juan" required>
+                <div class="valid-feedback">
+                  Looks good!
                 </div>
-               
-                 <div class="col-md-3">
-                  <label for="validationCustom05" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="validationCustom05" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid zip.
-                  </div>
+              </div>
+
+              <!-- MNAME -->
+              <div class="col-md-12">
+                <label for="validationCustom03" class="form-label">Middle name</label>
+                <input type="text" class="form-control" id="validationCustom03" value="Tamad" required>
+                <div class="valid-feedback">
+                  Looks good!
                 </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                      Agree to terms and conditions
-                    </label>
-                    <div class="invalid-feedback">
-                      You must agree before submitting.
-                    </div>
-                  </div>
-                </div>  -->
-                <!-- <div class="col-12 mt-3">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
-                </div> -->
-            </form>
+              </div>
+              <!-- SELECTION -->
+              <div class="col-md-12">
+                <label for="validationCustom04" class="form-label">Sex</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Everyday</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+              <!-- DATE -->
+              <div class="col-md-12">
+                <label for="validationCustom04" class="form-label">Date</label>
+                <input id="endDate" class="form-control" type="date" />
+                <span id="endDateSelected"></span>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+          </div>
+
         </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+
+          <!-- BACK AND NEXT BUTTON -->
+          <div class="containter-fluid d-flex justify-content-center">
+            <div class="d-flex flex-row">
+
+              <button class="btn btn-primary m-2 btn-width-back" type="submit">Back</button>
+              <button class="btn btn-success m-2 btn-width-next" type="submit">Save</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    </form>
 
-    <!-- STEP INDICATOR -->
 
+
+  </div>
 
 
 
