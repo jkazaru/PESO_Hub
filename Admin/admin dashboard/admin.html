@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<meta charset="utf-8" lang="en">
+<meta name="viewport" content="width=width-device, initial=scale-1">
+
+<!---START OF HEADER CALL OUTS-->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!---END OF HEADER CALL OUTS-->
+
+
+
+<!---START OF STYLE-->
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+  .navbar a:hover {
+    color: #171fd6;
+  }
+
+  .navbar-nav .nav-link {
+    float: right;
+  }
+
+  .nav-link {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .navbar .logo {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    /* Align with the logo */
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .bi-person {
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor;
+    margin: -0.3rem 0.5rem;
+  }
+
+  body {
+    margin: 0;
+    background-color: #1e1e1e;
+  }
+  
+</style>
+
+<!---END OF STYLE-->
+
+
+
+<nav class="navbar sticky-top  navbar-expand-lg navbar-light bg-light nav-height ">
+  <div class="container-fluid">
+    <a href="#home"><img src="https://i.ibb.co/KG7QTYm/peso-logo-removebg-preview.png" alt="peso-logo-removebg-preview"
+        border="0"></a>
+    <button class="navbar-toggler burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- nav -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto mh-40">
+        <a class="nav-link" aria-current="page" href="#">HOME</a>
+        <a class="nav-link" href="#">QUICK MATCH</a>
+        <a class="nav-link" href="#">PROFILE MANAGEMENT</a>
+
+
+        <!--////////////////////// TO CHANGE THE USER ICON INTO TEXT  //////////////////////// -->
+
+
+        <script>
+          // Function to check viewport width and update .bi-person
+          function checkViewport() {
+            // Select the .bi-person element
+            var biPerson = document.querySelector('.bi-person');
+        
+            // If .bi-person exists
+            if (biPerson) {
+              // If viewport width is less than or equal to half or zoom level is less than or equal to 100%
+              if (window.innerWidth < window.screen.width / 2 || window.devicePixelRatio > 1) {
+                biPerson.style.display = 'none';
+                if (!document.querySelector('.user')) {
+                  biPerson.insertAdjacentHTML('afterend', '<span class="user">USER</span>');
+                }
+              }
+              // If viewport width is greater than half and zoom level is greater than 100%
+              else {
+                // Show .bi-person and remove "user" text
+                biPerson.style.display = 'block';
+                var userText = document.querySelector('.user');
+                if (userText) {
+                  userText.remove();
+                }
+              }
+            }
+          }
+        
+          // Run checkViewport when the window is resized
+          window.addEventListener('resize', checkViewport);
+        
+          // Run checkViewport on load
+          checkViewport();
+        </script>
+        
+
+
+        <!--////////////////////// TO CHANGE THE USER ICON INTO TEXT  //////////////////////// -->
+
+        <a class="nav-link user-icon" href="#" tabindex="-1" aria-disabled="true">
+          <!-- USER ICON -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-person" viewBox="0 0 17 17">
+            <path
+              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<body>
+    
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="img/1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/4.jpg" alt="">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="container">
+          <div class="filter">
+            <button class="btn-filter">Recommendation</button>
+            <button class="btn-filter">Vacancies</button>
+            <button class="btn-filter">Pinned Jobs</button>
+            <button class="btn-filter">Applications</button>
+        </div>
+    </div>
+
+<div class="pq">
+    <h3>Job Applications Status</h3>
+    <div class="job-advertisement">
+        <table class="job-table">
+            <!-- Your table content here -->
+        </table>
+    </div>
+</div>
+
+      <div class="job-advertisement">
+        <table class="job-table">
+          <tr>
+            <th>Job Position</th>
+            <th>Company Name</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td style="color: white;">UI Designer</td>
+            <td style="color: white;">Microsoft</td>
+            <td style="color: white;">Pending</td>
+            <td><button class="btn1">Apply</button></td>
+          </tr>
+          <tr>
+            <td style="color: white;">Accountant</td>
+            <td style="color: white;">TCS</td>
+            <td style="color: white;">Pending</td>
+            <td><button class="btn1">Apply</button></td>
+          </tr>
+          <tr>
+            <td style="color: white;">IT Specialist</td>
+            <td style="color: white;">Tech Mahindra</td>
+            <td style="color: white;">Pending</td>
+            <td><button class="btn1">Apply</button></td>
+          </tr>
+          <tr>
+            <td style="color: white;">Backend Developer</td>
+            <td style="color: white;">Tencent Holdings</td>
+            <td style="color: white;">Pending</td>
+            <td><button class="btn1">Apply</button></td>
+          </tr>
+          <tr>
+            <td style="color: white;">Project Manager</td>
+            <td style="color: white;">Accenture</td>
+            <td style="color: white;">Pending</td>
+            <td><button class="btn1">Apply</button></td>
+          </tr>
+        </table>
+      </div>
+
+    <div class="footer">
+      <footer></footer>
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>

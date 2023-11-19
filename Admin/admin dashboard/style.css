@@ -1,0 +1,234 @@
+:root {
+    --primaryColor: #4c50d3;
+    --secondaryColor: #ffce00;
+    --fontColor: #1e1e1e;
+    --whiteColor: #ffffff;
+    --greyColor: #e7e7e7;
+    --darkGreyColor: #5f5f5f;
+    --softPurple: #e6e6ff;
+    --softBlue: #c3e1ff;
+    --softYellow: #fff9c4;
+    --softRed: #ffcbc8;
+    
+    --main-bg-color: #5f5f5f;
+}
+
+.footer {
+    margin-bottom: 100px;
+}
+
+.pq {
+    color: white;
+    text-align: center;
+}
+
+.pq h3 {
+    margin-bottom: 60px; /* Add space below the heading */
+}
+
+
+.slider{
+    width: 1300px;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
+
+.container{
+    align-items: center;
+    height: 200px;
+    position: relative;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.filter {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 34%; /* Center horizontally within the container */
+    transform: translate(-50%, -50%);
+}
+
+
+.pq{
+    color: white;
+}
+
+.pq h3 {
+    text-align: center;
+    margin-top: -40px;
+}
+
+.main {
+    width: calc(100% - 100% -100%);
+    min-height: 100%;
+    min-width: 300px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2%;
+    margin-left: 20%;
+    background-color: var(--softPurple);
+    z-index: 1;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-bar {
+    background-color: var(--whiteColor);
+    padding: 0.5rem;
+    border-radius: 20px;
+    display: none;
+}
+
+.filter-wrapper {
+    margin: 1rem 0;
+    font-size: 14px;
+}
+.filter {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    margin: 0.5rem 0;
+}
+
+.btn-filter {
+    width: 200px;
+    height: 50px;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--whiteColor);
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    background-color: rgb(58, 225, 128);
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.job-advertisement {
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .job-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+  }
+  
+  .job-table th, .job-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .job-table th {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .job-table td a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .job-table td {
+    padding: 10px;
+    border: 2px solid #ccc; /* Set the border width and color */
+    text-align: center;
+}
+  
+  .job-table td a:hover {
+    color: #c91d1d;
+    background-color: #c22828;
+    border-box: 200px;
+  }
+
+  .btn1 {
+    background-color: #f44336; /* Green */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

@@ -5,25 +5,7 @@
       z-index: 1000;
   }
 
-  /*   <!-- COPY THIS 2--> */
-  .test-body {
-      background-color: #1e1e1e;
-      width: 100%;
-      height: 400px;
-  }
-
-  .test-body2 {
-      background-color: #921919;
-      width: 100%;
-      height: 400px;
-  }
-
-  .test-body3 {
-      background-color: #3c6d11;
-      width: 100%;
-      height: 400px;
-  }
-
+ 
   .badge-width {
       width: 12rem;
       height: 2rem;

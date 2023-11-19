@@ -1,0 +1,330 @@
+<!-- These Are All Set in Stone-->
+
+<meta charset="utf-8" lang="en">
+<meta name="viewport" content="width=width-device, initial=scale-1">
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+      
+    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+<!-- These Are All Set in Stone-->
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  
+    .navbar a:hover {
+      color: #171fd6;
+    }
+  
+    .navbar-nav .nav-link {
+      float: right;
+    }
+  
+    .nav-link {
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .navbar .logo {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  
+    .bi-person {
+      width: 2rem;
+      height: 2rem;
+      fill: currentColor;
+      margin: -0.3rem 0.5rem;
+    }
+  
+    body {
+      margin: 0;
+      background-color: #1e1e1e;
+    }
+
+    .badge-width {
+      width: 12rem;
+      height: 3rem;
+      text-align: center;
+      font-size: 0.9rem !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+    .form-box {
+      flex-wrap: wrap;
+      padding: 1rem;
+      width: 40vw;
+      height: auto;
+      border: 2px dashed yellow;
+      border-radius: 2%;
+      color: white;
+     
+    }
+
+    .form-left {
+      width: 50%;
+      float: left;
+      padding-right: 5%;
+    }
+
+    .form-right {
+      width: 50%;
+      float: right;
+      padding-left: 5%;
+    }
+
+    .buttons {
+      height: 5%;
+      width: 100%;
+      padding-left: 46%;
+      margin-top: 1%;
+
+    }
+
+    .disabilities {
+      margin-left: 15px;
+      width: 100%;
+      height: auto;
+      
+    }
+
+    .disov {
+      margin-top: 15px;
+    }
+  </style>
+
+<!--Navigation Bar Codes Start-->
+
+  <nav class="navbar sticky-top  navbar-expand-lg navbar-light bg-light nav-height ">
+    <div class="container-fluid">
+      <a href="#home"><img src="https://i.ibb.co/KG7QTYm/peso-logo-removebg-preview.png" alt="peso-logo-removebg-preview"
+          border="0"></a>
+      <button class="navbar-toggler burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- nav -->
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto mh-40">
+          <a class="nav-link" aria-current="page" href="#">HOME</a>
+          <a class="nav-link" href="#">QUICK MATCH</a>
+          <a class="nav-link" href="#">PROFILE MANAGEMENT</a>
+
+<!-- TO CHANGE THE USER ICON INTO TEXT START -->
+  
+          <script>
+            // Function to check viewport width and update .bi-person
+            function checkViewport() {
+              // Select the .bi-person element
+              var biPerson = document.querySelector('.bi-person');
+          
+              // If .bi-person exists
+              if (biPerson) {
+                // If viewport width is less than or equal to half or zoom level is less than or equal to 100%
+                if (window.innerWidth < window.screen.width / 2 || window.devicePixelRatio > 1) {
+                  biPerson.style.display = 'none';
+                  if (!document.querySelector('.user')) {
+                    biPerson.insertAdjacentHTML('afterend', '<span class="user">USER</span>');
+                  }
+                }
+                // If viewport width is greater than half and zoom level is greater than 100%
+                else {
+                  // Show .bi-person and remove "user" text
+                  biPerson.style.display = 'block';
+                  var userText = document.querySelector('.user');
+                  if (userText) {
+                    userText.remove();
+                  }
+                }
+              }
+            }
+          
+            // Run checkViewport when the window is resized
+            window.addEventListener('resize', checkViewport);
+          
+            // Run checkViewport on load
+            checkViewport();
+          </script>
+          
+<!-- TO CHANGE THE USER ICON INTO TEXT END -->
+
+          <a class="nav-link user-icon" href="#" tabindex="-1" aria-disabled="true">
+            <!-- USER ICON -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-person" viewBox="0 0 17 17">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!--Navigation Bar Codes End-->
+
+<!--Profile Management Buttons START -->
+    <body>
+      <div class="container-fluid d-flex justify-content-center flex-wrap mt-3">
+        <button class="badge bg-secondary badge-width mx-1 my-1">Applicant Identity</button>
+        <button class="badge bg-success badge-width mx-1 my-1">Personal Information</button>
+        <button class="badge bg-secondary badge-width mx-1 my-1">Work Experience</button>
+        <button class="badge bg-secondary badge-width mx-1 my-1">Educational Background</button>
+        <button class="badge bg-secondary badge-width mx-1 my-1">Job Preference</button>
+        <button class="badge bg-secondary badge-width mx-1 my-1">Employment Status</button>
+      </div>
+<!--Profile Management Buttons End -->
+
+      <div class="container-fluid d-flex justify-content-center flex-wrap mt-3">
+      <div class="form-box">
+        
+        <!--Left Part of Form-->
+
+        <div class="form-left">
+        <form class="row g-8 needs-validation" novalidate>
+            <div class="col-md-12">
+              <label for="validationCustom04" class="form-label">Civil Status</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose</option>
+                <option>Single</option>
+                <option>Married</option>
+                <option>Widowed</option>
+              </select>
+            </div>
+            <div class="col-md-12">
+                <label for="validationCustom02" class="form-label">Barangay</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="San Bartolome" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="validationCustom03" class="form-label">Province</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="Metro Manila" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+              <div class="col-md-12">
+                <label for="validationCustom04" class="form-label">Date</label>
+                <input id="endDate" class="form-control" type="date" />
+                <span id="endDateSelected"></span>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+              <label class="disov"> Disabilities (If Any):</label>
+              <div class="disabilities">
+                
+                <div class="dis1 mx-auto">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Mental
+                </label>
+                </div>
+
+                <div class="dis2 mx-auto">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Visual
+                </label>
+                </div>
+                
+                <div class="dis3 mx-auto">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Physical
+                </label>
+                </div>
+
+                <div class="dis4 mx-auto">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Speech
+                </label>
+                </div>
+
+                <div class="dis4 mx-auto">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Hearing
+                </label>
+                </div>
+              </div>
+            </div>
+
+            <!--Left Part of Form-->
+
+            <!--Right Part of Form-->
+            <div class="form-right">
+              <form class="row g-8 needs-validation" novalidate>
+                  <div class="col-md-12">
+                      <label for="validationCustom01" class="form-label">Street Name, Building, House No.</label>
+                      <input type="text" class="form-control" id="validationCustom01" placeholder="Manila Bible Seminary..." required>
+                      <div class="valid-feedback">
+                          Looks good!
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <label for="validationCustom02" class="form-label">City</label>
+                      <input type="text" class="form-control" id="validationCustom02" placeholder="Quezon City" required>
+                      <div class="valid-feedback">
+                          Looks good!
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <label for="validationCustom04" class="form-label">Religion</label>
+                      <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>Christian</option>
+                        <option>Catholic</option>
+                        <option>Iglesia ni Cristo</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <label for="validationCustom03" class="form-label">Landline No.</label>
+                      <input type="text" class="form-control" id="validationCustom03" placeholder="XXXX-XXXX" required>
+                      <div class="valid-feedback">
+                          Looks good!
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="validationCustom03" class="form-label">Mobile No.</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="09XXXXXXXXX" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+              </div>
+            <!--Right Part of Form-->
+
+              </div>
+              </div>
+              
+            <!--Buttons Outside of Form-->
+              <div class="buttons">
+                <button class="btn btn-primary m-2 btn-width-back" type="submit">Back</button>
+                <button class="btn btn-success m-2 btn-width-next" type="submit">Save</button>
+              </div>
+            <!--Buttons Outside of Form-->
+    </body>
+
+</html>

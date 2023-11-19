@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Add Company</title>
+  <style>
+  </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <img src="logo.png" class="rounded float-start" alt="...">
+    <div class="navbar-collapse justify-content-end">
+        <a class="nav-link user-icon" href="#"><i class="bi bi-person"></i></a>
+    </div>
+</nav>
+<div class="text-center mt-5">
+        <h2><b>Job List Creation</b></h2>
+    
+<div class="container text-center">
+  <div class="custom-container">
+    
+    <div class="row mt-1">
+      <div class="col-md-6 text-center">
+        <!-- Logo -->
+        <h2><b>Company logo</b></h2>
+        <img src="pesologo.png" alt="Company Logo" class="img-fluid mb-3">
+        <!-- Upload Image Button --><br>
+        <input type="file" class="btn btn-primary" value="Upload Image">
+      </div>
+      <div class="col-md-5 text-center">
+        <!-- Company Information Form -->
+      
+            <form>
+                <div class="form-group">
+                  <label for="companyName">Name of Company</label>
+                  <input type="text" class="form-control" id="companyName" placeholder="Enter company name">
+                </div>
+                <div class="form-group">
+                  <label for="jobposition">Job Position</label>
+                  <input type="email" class="form-control" id="jobposition" placeholder="Enter Job Position">
+                </div>
+                <div class="form-group">
+                  <label for="jobdesc">Job Description</label>
+                  <textarea class="form-control" id="jobdesc" rows="3" placeholder="Enter Job Description"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="salary">Salary</label>
+                  <input type="text" class="form-control" id="salary" placeholder="Enter Salary">
+                </div>
+                <div class="form-group">
+                  <label for="location">Location</label>
+                  <textarea class="form-control" id="location" rows="3" placeholder="Enter Location"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="quali">Qualifications</label>
+                  <textarea class="form-control" id="quali" rows="3" placeholder="Enter Qualifications"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="compdesc">Company Description</label>
+                  <textarea class="form-control" id="compdesc" rows="3" placeholder="Enter Company Description"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="industry">Industry</label>
+                  <input type="text" class="form-control" id="industry" placeholder="Enter Industry">
+                </div>
+                <div class="form-group">
+                  <label for="education">Educational Eligibility</label>
+                  <input type="text" class="form-control" id="education" placeholder="Enter Educational Eligibility">
+                </div>          
+                <div class="form-group">
+                  <label for="type">Type of Job</label>
+                  <input type="text" class="form-control" id="type" placeholder="Enter Type of Job">
+                </div> 
+                <div class="form-group">
+                <label for="status">PWD Status</label>
+              </div>  
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">No</label>            
+                </div>
+          
+                <div class="text-center mt-3">
+                  <!-- Save Button -->
+                  <button type="submit" class="btn btn-success">Edit Listing</button>
+                </div>       
+        </form>
+      </div>
+    </div>
+</div>
+</div>
+    <form onsubmit="return validateForm()">
+      <!-- Your existing form content here -->
+    </form>
+  <footer>
+    <p class="text-center">© 2000 - Company, Inc. All rights reserved. Address Address</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+  function validateForm() {
+    // Get form elements
+var companyName = document.getElementById("companyName").value;
+var jobposition = document.getElementById("jobposition").value;
+var jobdesc = document.getElementById("jobdesc").value;
+var salary = document.getElementById("salary").value;
+var location= document.getElementById("location").value;
+var quali = document.getElementById("quali").value;
+var compdesc = document.getElementById("compdesc").value;
+var industry = document.getElementById("industry").value;
+var education = document.getElementById("education").value;
+var type = document.getElementById("type").value;
+var status = document.getElementById("status").value;
+    // Check if required fields are empty
+    if (companyName === "" || jobposition === "" || jobdesc === "" || salary === "" || location === "" 
+    || quali === "" || compdesc === "" || industry === "" || education === "" || type === "" || status === "") {
+      alert("Please fill out all required fields");
+      return false; // Prevent form submission
+    }
+
+    // If all fields are filled, allow form submission
+    return true;
+  }
+</script>
+</body>
+</html>

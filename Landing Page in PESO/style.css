@@ -1,0 +1,212 @@
+body{
+    background-color: #0f0f0f;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+header{
+    background-color: white;
+    padding: 5px;
+}
+
+header li{
+    display: inline;
+    padding-left: 50px;
+    font-weight: bold;
+    font-family: 'Roboto Mono';
+}
+
+header li a{
+    color: #0f0f0f;
+    text-decoration: none;
+    padding: 13px;
+    font-size: 15px;
+    text-shadow: 7px 3px 12px #0f0f0f;
+    font-family: 'Roboto Mono';
+}
+
+header ul #signup a{
+    color: #0f0f0f;
+    float: right;
+    position: relative;
+    top: -10px;
+    text-shadow: 7px 3px 12px #0f0f0f;
+}
+
+header ul #login a{
+    color: #0f0f0f;
+    float: right;
+    position: relative;
+    top: -10px;
+    text-shadow: 7px 3px 12px #0f0f0f;
+}
+
+header li img{
+    width: 200px;
+    float: left;
+    margin-top: -50px;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox h2{
+    color: #ffffff;
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: bold;
+    left: 200px;
+    top: -100px;
+    position:relative;
+    font-family: 'Roboto Mono';
+}
+
+.content .textBox p
+{
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.5;
+    bottom: 80px;
+    position:relative;
+    left: 200px;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Roboto Mono';
+}
+
+.content .textBox a
+{
+    display: inline-block;
+    justify-content: space-between; 
+    color: #0f0f0f;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 50px;
+    padding: 10px 25px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: bold;
+    left: 220px;
+    position:relative;
+    font-family: 'Roboto Mono';
+    text-shadow: 7px 3px 12px #0f0f0f;
+}
+
+.content .imgBox{
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 280px;
+    height: 600px;
+    object-fit: contain;
+}
+
+.about .textBox1 h2{
+    color: #ffffff;
+    font-size: 3.5em;
+    line-height: 1.4em;
+    font-weight: bold;
+    top: 100px;
+    bottom: -20px;
+    position:relative;
+    font-family: 'Roboto Mono';
+}
+
+.about .textBox1 .a p{
+    color: #ffffff;
+    line-height: 1.5;
+    text-indent: 100px;
+    bottom: 200px;
+    text-align: justify;
+    position:relative;
+    padding: 400px;
+    font-size: medium;
+    font-family: 'Roboto Mono';
+}
+
+.about .textBox1 .b p{
+    color: #ffffff;
+    line-height: 1.5;
+    text-indent: 100px;
+    bottom: 1000px;
+    padding: 400px;
+    text-align: justify;
+    position:relative;
+    font-size: medium;
+    font-family: 'Roboto Mono';
+}
+.objectives{
+    position: relative;
+    text-align: center;
+}
+
+.objectives img{
+    max-width: 100%;
+    height: auto;
+}
+.objectives .centered {
+    position: absolute;
+    font-size: 2.5em;
+    line-height: 1.4em;
+    font-weight: bold;
+    top: 10%;
+    left: 50%;
+    color: #ffffff;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto Mono';
+  }
+
+  .objectives h3{
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+  }
+  .objectives p{
+    text-align: justify;
+    font-size: small;
+    margin: 10px;
+    
+  }
+  .text-block {
+    position: absolute;
+    top: -850px;
+    left: -600px;
+    background-color: white;
+    color: #0f0f0f;
+    margin: 1000px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 100px;
+    font-family: 'Roboto Mono';
+    text-align: justify;
+  }
+
+  .text-block2 {
+    position: absolute;
+    top: 2000px;
+    left: 100px;
+    height: auto;
+    background-color: white;
+    color: #0f0f0f;
+    margin: 300px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 100px;
+    font-family: 'Roboto Mono';
+    text-align: justify;
+    block-size: 300px;
+  }
+
+.contact h1{
+    color: #ffffff;
+    font-family: 'Roboto Mono';
+    font-size: 2.5em;
+}

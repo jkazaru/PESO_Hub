@@ -1,0 +1,427 @@
+<meta charset="utf-8" lang="en">
+<meta name="viewport" content="width=width-device, initial=scale-1">
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+      
+    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+<!-- These Are All Set in Stone-->
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+  
+    .navbar a:hover {
+      color: #171fd6;
+    }
+  
+    .navbar-nav .nav-link {
+      float: right;
+    }
+  
+    .nav-link {
+      font-family: 'Poppins', sans-serif;
+    }
+  
+    .navbar .logo {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: left;
+      /* Align with the logo */
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  
+    .bi-person {
+      width: 2rem;
+      height: 2rem;
+      fill: currentColor;
+      margin: -0.3rem 0.5rem;
+    }
+  
+    body {
+      margin: 0;
+      background-color: #1e1e1e;
+    }
+
+    .badge-width {
+      width: 12rem;
+      height: 2rem;
+      text-align: center;
+      font-size: 0.9rem !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+    .form-box {
+      flex-wrap: wrap;
+      padding: 1rem;
+      width: 40vw;
+      height: auto;
+      border: 2px;
+      border-radius: 2%;
+      color: white;
+     
+    }
+
+    .mod-form {
+      flex-wrap: wrap;
+      padding: 1rem;
+      width: 19vw;
+      height: auto;
+      border: 2px;
+      border-radius: 2%;
+      color: black;
+      padding-left: 19.5%;
+     
+    }
+
+    .buttons1 {
+      height: 5%;
+      width: 100%;
+      padding-left: 30.5%;
+      margin-top: 1%;
+
+    }
+
+    .buttons2 {
+      height: 5%;
+      width: 100%;
+      padding-left: 46%;
+      margin-top: 1%;
+
+    }
+
+    
+    .disabilities {
+      margin-left: 15px;
+      width: 100%;
+      height: auto;
+      
+    }
+
+    .disov {
+      margin-top: 15px;
+    }
+
+    .resume {
+        color: white;
+        width: 100%;
+        padding-left: 31%;
+        margin-top: 1%;
+    }
+
+    table {
+        text-align: center;
+    }
+    
+    #wrkexp {
+        width: 15%;
+        float: left;
+    }
+
+    .mod-head {
+        color: black;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 12;
+        text-align: center;
+    }
+
+    /* Modal Codes Below */
+   
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    }
+
+    /* Close Button (X) */
+    .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+  </style>
+
+<!--Navigation Bar Codes Start-->
+  <nav class="navbar sticky-top  navbar-expand-lg navbar-light bg-light nav-height ">
+    <div class="container-fluid">
+      <a href="#home"><img src="https://i.ibb.co/KG7QTYm/peso-logo-removebg-preview.png" alt="peso-logo-removebg-preview"
+          border="0"></a>
+      <button class="navbar-toggler burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- nav -->
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto mh-40">
+          <a class="nav-link" aria-current="page" href="#">HOME</a>
+          <a class="nav-link" href="#">QUICK MATCH</a>
+          <a class="nav-link" href="#">PROFILE MANAGEMENT</a>
+
+<!-- TO CHANGE THE USER ICON INTO TEXT -->
+  
+          <script>
+            // Function to check viewport width and update .bi-person
+            function checkViewport() {
+              // Select the .bi-person element
+              var biPerson = document.querySelector('.bi-person');
+          
+              // If .bi-person exists
+              if (biPerson) {
+                // If viewport width is less than or equal to half or zoom level is less than or equal to 100%
+                if (window.innerWidth < window.screen.width / 2 || window.devicePixelRatio > 1) {
+                  biPerson.style.display = 'none';
+                  if (!document.querySelector('.user')) {
+                    biPerson.insertAdjacentHTML('afterend', '<span class="user">USER</span>');
+                  }
+                }
+                // If viewport width is greater than half and zoom level is greater than 100%
+                else {
+                  // Show .bi-person and remove "user" text
+                  biPerson.style.display = 'block';
+                  var userText = document.querySelector('.user');
+                  if (userText) {
+                    userText.remove();
+                  }
+                }
+              }
+            }
+          
+            // Run checkViewport when the window is resized
+            window.addEventListener('resize', checkViewport);
+          
+            // Run checkViewport on load
+            checkViewport();
+          </script>
+          
+<!-- TO CHANGE THE USER ICON INTO TEXT -->
+
+          <a class="nav-link user-icon" href="#" tabindex="-1" aria-disabled="true">
+            <!-- USER ICON -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-person" viewBox="0 0 17 17">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!--Navigation Bar Codes End-->
+
+<!--Profile Management Buttons-->
+    <body>
+      <div class="container-fluid d-flex justify-content-center flex-wrap mt-3">
+        <button class="badge bg-secondary badge-width mx-1 my-1">Applicant Identity</button>
+        <button class="badge bg-secondary badge-width mx-1 my-1">Personal Information</button>
+        <button class="badge bg-success badge-width mx-1 my-1">Work Experience</button>
+        <button class="badge bg-secondary badge-width mx-1 my-1">Educational Background</button>
+        <button class="badge bg-secondary badge-width mx-1 my-1">Job Preference</button>
+        <button class="badge bg-secondary badge-width mx-1 my-1">Employment Status</button>
+      </div>
+<!--Profile Management Buttons End-->
+
+      <div class="container-fluid d-flex justify-content-center flex-wrap mt-3">
+      <div class="form-box">
+
+<!-- Company Table Start -->
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Company</th>
+                <th scope="col">Position</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Accenture</td>
+                <td>Network Assistant</td>
+                <td>July 6, 2020</td>
+                <td>November 10, 2023</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Concentrix</td>
+                <td>IT Specialist</td>
+                <td>December 6, 2021</td>
+                <td>August 10, 2022</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Accenture</td>
+                <td>Network Assistant</td>
+                <td>July 6, 2023</td>
+                <td>November 20, 2023</td>
+              </tr>
+            </tbody>
+          </table>
+          
+              </div>
+              </div>
+
+<!-- Company Table End -->
+
+        <div class="outside">
+            <!--Buttons Outside of Form Start-->
+              <div class="buttons1">
+                <button id="wrkexp" class="btn btn-success m-2 btn-width-next" type="submit">Add Work Experience</button>
+              </div>
+            <!--Buttons Outside of Form End-->
+
+            <!-- The Modal Start -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content modal-dialog mod-sm">
+                <span class="close">&times;</span>
+                <form class="form-left">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-12">
+                            
+                                <div class="mod-head">
+                                <h2>
+                                    Work Experience
+                                </h2>
+                                <p>
+                                    kindly specify your past work experiences
+                                </p>
+                            </div>
+                            <div class="mod-form" >
+                                <!-- Company Name -->
+                                <div class="col-md-12">
+                                  <label for="validationCustom01" class="form-label">Company</label>
+                                  <input type="text" class="form-control" id="validationCustom01" placeholder="Accenture" required>
+                                  
+                                </div>
+                  
+                                <!-- Position in Company -->
+                                <div class="col-md-12">
+                                  <label for="validationCustom02" class="form-label">Position</label>
+                                  <input type="text" class="form-control" id="validationCustom02" placeholder="IT Manager" required>
+                                  
+                                </div>
+                  
+                                <!-- Start Date -->
+                                <div class="col-md-12">
+                                    <label for="validationCustom04" class="form-label">Start Date</label>
+                                    <input id="endDate" class="form-control" type="date" />
+                                    <span id="endDateSelected"></span>
+                                   
+                                  </div>
+
+                                  <!-- End Date -->
+                                  <div class="col-md-12">
+                                    <label for="validationCustom04" class="form-label">End Date</label>
+                                    <input id="endDate" class="form-control" type="date" />
+                                    <span id="endDateSelected"></span>
+                                  
+                                  </div>
+                            </div>
+                        </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                  
+                            <!-- BACK AND NEXT BUTTON -->
+                            <div class="containter-fluid d-flex justify-content-center">
+                              <div class="d-flex flex-row">
+                  
+                                <button class="btn btn-primary m-2 btn-width-back" type="submit">Back</button>
+                                <button class="btn btn-success m-2 btn-width-next" type="submit">Save</button>
+                  
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </form>
+                </div>
+                 <!-- The Modal End -->
+            
+            </div>
+            
+            <!-- Resume Start -->
+            <div class="resume">
+                <label id="resume">
+                    Upload Resume:
+                </label>
+                <form>
+                    <input type="file" id="myFile" name="filename">
+                  </form>
+            </div>
+            <!-- Resume End -->
+
+            <div class="buttons2">
+                <button class="btn btn-primary m-2 btn-width-back" type="submit">Back</button>
+                <button class="btn btn-success m-2 btn-width-next" type="submit">Save</button>
+              </div>
+
+            <!-- JavaScript Start -->
+            <script>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("wrkexp");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+            <!-- JavaScript End -->
+    </body>
+ 
+</html>

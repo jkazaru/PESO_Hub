@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="J. Casal">
   <title>Applicant Identity</title>
   <!-- COPY THIS 1-->
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="validation-controll.js"></script>
   <!-- COPY THIS 1 -->
   <link rel="stylesheet" href="profile-management.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <!-- COPY THIS 3-->
+  <!-- NAV BAR-->
   <div id="nav-placeholder">
     <script>
       $(function () {
@@ -28,16 +28,16 @@
       });
     </script>
   </div>
-  <!-- COPY THIS 3-->
+  <!-- END NAV BAR-->
 
   <!-- STEP INDICATOR -->
   <div class="container-fluid d-flex justify-content-center flex-wrap mt-3">
-    <span class="badge bg-success badge-width mx-1 my-1">Applicant Identity</span>
-    <span class="badge bg-secondary badge-width mx-1 my-1">Personal Information</span>
-    <span class="badge bg-secondary badge-width mx-1 my-1">Work Experience</span>
-    <span class="badge bg-secondary badge-width mx-1 my-1">Educational Background</span>
-    <span class="badge bg-secondary badge-width mx-1 my-1">Job Preference</span>
-    <span class="badge bg-secondary badge-width mx-1 my-1">Employment Status</span>
+    <span class="badge bg-success badge-width mx-1 my-1 py-2">Applicant Identity</span>
+    <span class="badge bg-secondary badge-width mx-1 my-1 py-2">Personal Information</span>
+    <span class="badge bg-secondary badge-width mx-1 my-1 py-2">Work Experience</span>
+    <span class="badge bg-secondary badge-width mx-1 my-1 py-2">Educational Background</span>
+    <span class="badge bg-secondary badge-width mx-1 my-1 py-2">Job Preference</span>
+    <span class="badge bg-secondary badge-width mx-1 my-1 py-2">Employment Status</span>
 
   </div>
 
@@ -46,38 +46,41 @@
 
   <!-- FORM CONTAINER -->
   <div class="container-fluid d-flex justify-content-center flex-wrap mt-3">
-    <form class="row g-8">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div class="form-box">
-           
+    <form class="row g-8 needs-validation" novalidate>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="form-box">
+
               <!-- LNAME -->
               <div class="col-md-12">
                 <label for="validationCustom01" class="form-label">Last name</label>
                 <input type="text" class="form-control" id="validationCustom01" value="Delacruz" required>
-                <div class="valid-feedback">
+                <!-- <div class="valid-feedback">
                   Looks good!
-                </div>
+                </div> -->
               </div>
 
               <!-- FNAME -->
               <div class="col-md-12">
                 <label for="validationCustom02" class="form-label">First name</label>
                 <input type="text" class="form-control" id="validationCustom02" value="Juan" required>
-                <div class="valid-feedback">
+                <!-- <div class="valid-feedback">
                   Looks good!
-                </div>
+                </div> -->
               </div>
+              <!-- FNAME -->
 
               <!-- MNAME -->
               <div class="col-md-12">
                 <label for="validationCustom03" class="form-label">Middle name</label>
                 <input type="text" class="form-control" id="validationCustom03" value="Tamad" required>
-                <div class="valid-feedback">
+                <!-- <div class="valid-feedback">
                   Looks good!
-                </div>
+                </div> -->
               </div>
+              <!-- MNAME -->
+
               <!-- SELECTION -->
               <div class="col-md-12">
                 <label for="validationCustom04" class="form-label">Sex</label>
@@ -91,43 +94,43 @@
                   Please select a valid state.
                 </div>
               </div>
+              <!--  END SELECTION -->
               <!-- DATE -->
               <div class="col-md-12">
-                <label for="validationCustom04" class="form-label">Date</label>
-                <input id="endDate" class="form-control" type="date" />
+                <label for="validationCustom05" class="form-label">Date</label>
+                <input id="endDate" class="form-control" type="date" id="validationCustom05"required/>
                 <span id="endDateSelected"></span>
                 <div class="invalid-feedback">
                   Please select a valid state.
                 </div>
               </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-
-          <!-- BACK AND NEXT BUTTON -->
-          <div class="containter-fluid d-flex justify-content-center">
-            <div class="d-flex flex-row">
-
-              <button class="btn btn-primary m-2 btn-width-back" type="submit">Back</button>
-              <button class="btn btn-success m-2 btn-width-next" type="submit">Save</button>
-
+              <!-- END SELECTION -->
             </div>
+            <!-- VALIDATION CONTROLL -->
+            <script src="validation-controll.js"></script>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <!-- BACK AND NEXT BUTTON -->
+            <div class="containter-fluid d-flex justify-content-center">
+              <div class="d-flex flex-row">
+                <button class="btn btn-primary m-2 btn-width-back" id="btn-back">Back</button>
+                <button class="btn btn-success m-2 btn-width-next" id="btn-next" type="submit">Save</button>
+                <script src="button-controll.js"></script>                  
+              </div>
+            </div>
+            <!-- END BACK AND NEXT BUTTON -->
           </div>
         </div>
       </div>
 
-
-      
-    </div>
- 
 
 
 
     </form>
-    
+
 
 
 
